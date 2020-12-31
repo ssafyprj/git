@@ -746,7 +746,7 @@ exports.level = {
               "## `<place>` 인자에 대한 세부사항들",
               "",
               "",
-              "기억하세요? 이전 강의에서 우리는 `main`를 커밋의 근원이되는 *source*와 목적지가 되는 *destination*으로 명령어의 인자로 넣어줌으로써 지정해줬습니다.",
+              "기억하세요? 이전 강의에서 우리는 `master`를 커밋의 근원이되는 *source*와 목적지가 되는 *destination*으로 명령어의 인자로 넣어줌으로써 지정해줬습니다.",
               "여러분은 이런 생각이 들 수 있어요 -- 내가 source와 destination이 다르길 원하면 어떻게 해야되지? 로컬의 `foo` 브랜치에서 원격의 `bar` 브랜치로 커밋을 push하고 싶으면 어떻게 해야 되지?",
               "",
               "사실 git에서는 그게 불가능합니다... 네 농담이고! 당연 가능합니다 :)... git의 어마무시하게 유연합니다(지나칠정도로요).",
@@ -778,7 +778,7 @@ exports.level = {
             "afterMarkdowns": [
               "워 뭔가 잘 안쓸것 같은 명령이지만 잘 됩니다 -- git은 `foo^`의 위치를 알아내서 원격 저장소에 아직 반영되지 않은 커밋들을 업로드하고 destination 브랜치를 갱신했습니다."
             ],
-            "command": "git push origin foo^:main",
+            "command": "git push origin foo^:master",
             "beforeCommand": "git clone; go -b foo; git commit; git commit"
           }
         },
@@ -791,7 +791,7 @@ exports.level = {
             "afterMarkdowns": [
               "좋네요, 번지르르 삐까뻔쩍 :D"
             ],
-            "command": "git push origin main:newBranch",
+            "command": "git push origin master:newBranch",
             "beforeCommand": "git clone; git commit"
           }
         },

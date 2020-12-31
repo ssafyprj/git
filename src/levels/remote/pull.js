@@ -757,9 +757,9 @@ exports.level = {
               "",
               "사실 이걸 하는 방법은 여러가지 있습니다 -- 새 커밋들을 로컬에 내려받은 이후에는 그냥 다른 브랜치에있는 일반 커밋처럼 활용할 수 있습니다. 이런 명령들을 실행할 수 있다는 뜻 입니다 :",
               "",
-              "* `git cherry-pick o/main`",
-              "* `git rebase o/main`",
-              "* `git merge o/main`",
+              "* `git cherry-pick o/master`",
+              "* `git rebase o/master`",
+              "* `git merge o/master`",
               "* 기타 등등",
               "",
               "사실 원격 저장소의 변경을 *fetch*하고 그이후에 *merge*하는 작업의 과정이 워낙 자주있는 일이라서 git은 이 두가지를 한번에 하는 명령을 제공합니다! 이 명령어는 `git pull` 입니다."
@@ -773,9 +773,9 @@ exports.level = {
               "먼저 `fetch` 와 `merge`가 차례로 실행되는것을 확인해 봅시다"
             ],
             "afterMarkdowns": [
-              "Boom -- 우리는 `C3`를 `fetch`로 내려 받고 `git merge o/main`로 우리의 작업으로 병합했습니다. 이제 우리의 `main` 브랜치는 원격 저장소의 새 작업들을 반영하게 됩니다(지금 사례에서 `origin`입니다)."
+              "Boom -- 우리는 `C3`를 `fetch`로 내려 받고 `git merge o/master`로 우리의 작업으로 병합했습니다. 이제 우리의 `master` 브랜치는 원격 저장소의 새 작업들을 반영하게 됩니다(지금 사례에서 `origin`입니다)."
             ],
-            "command": "git fetch; git merge o/main",
+            "command": "git fetch; git merge o/master",
             "beforeCommand": "git clone; git commit; git fakeTeamwork"
           }
         },

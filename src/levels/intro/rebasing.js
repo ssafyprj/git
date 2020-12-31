@@ -803,20 +803,20 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "여기 또 브랜치 두 개가 있습니다; bugFix브랜치가 현재 선택됐다는 점 눈여겨 보세요 (별표 표시)",
+              "여기 또 브랜치 두 개가 있습니다; `bugFix` 브랜치가 현재 선택됐다는 점 눈여겨 보세요 (별표 표시)",
               "",
-              "bugFix 브랜치에서의 작업을 main 브랜치 위로 직접 옮겨 놓으려고 합니다. 그렇게 하면, 실제로는 두 기능을 따로따로 개발했지만, 마치 순서대로 개발한 것처럼 보이게 됩니다.",
+              "`bugFix` 브랜치에서의 작업을 `master` 브랜치 위로 직접 옮겨 놓으려고 합니다. 그렇게 하면, 실제로는 두 기능을 따로따로 개발했지만, 마치 순서대로 개발한 것처럼 보이게 됩니다.",
               "",
               "`git rebase` 명령어로 함께 해보죠."
             ],
             "afterMarkdowns": [
               "오! 이제 bugFix 브랜치의 작업 내용이 master의 바로 위에 깔끔한 한 줄의 커밋으로 보이게 됐습니다.",
               "",
-              "C3 커밋은 어딘가에 아직 남아있고(그림에서 흐려짐), C3'는 main 위에 올려 놓은 복사본입니다.",
+              "C3 커밋은 어딘가에 아직 남아있고(그림에서 흐려짐), C3'는 master 위에 올려 놓은 복사본입니다.",
               "",
               "master가 아직 그대로라는 문제가 남아있는데요, 바로 해결해보죠..."
             ],
-            "command": "git rebase main",
+            "command": "git rebase master",
             "beforeCommand": "git commit; git checkout -b bugFix C1; git commit"
           }
         },
@@ -824,13 +824,13 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "우리는 지금 `main` 브랜치를 선택한 상태입니다. `bugFix` 브랜치쪽으로 리베이스 해보겠습니다..."
+              "우리는 지금 `master` 브랜치를 선택한 상태입니다. `bugFix` 브랜치쪽으로 리베이스 해보겠습니다..."
             ],
             "afterMarkdowns": [
-              "보세요! `main`가 `bugFix`의 부모쪽에 있었기 때문에, 단순히 그 브랜치를 더 앞쪽의 커밋을 가리키게 이동하는 것이 전부입니다."
+              "보세요! `master`가 `bugFix`의 부모쪽에 있었기 때문에, 단순히 그 브랜치를 더 앞쪽의 커밋을 가리키게 이동하는 것이 전부입니다."
             ],
             "command": "git rebase bugFix",
-            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit; git rebase main; git checkout main"
+            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit; git rebase master; git checkout master"
           }
         },
         {
@@ -841,7 +841,7 @@ exports.level = {
               "",
               "* `bugFix`라는 새 브랜치를 만들어 선택하세요",
               "* 커밋 한 번 합니다",
-              "* master로 돌아가서 또 커밋합니다",
+              "* `master`로 돌아가서 또 커밋합니다",
               "* bugFix를 다시 선택하고 master에 리베이스 하세요",
               "",
               "화이팅!"

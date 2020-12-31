@@ -824,32 +824,32 @@ exports.level = {
             "beforeMarkdowns": [
               "여기에 브랜치가 두 개 있습니다. 각 브랜치에 독립된 커밋이 하나씩 있구요. 그 말은 이 저장소에 지금까지 작업한 내역이 나뉘어 담겨 있다는 얘기입니다. 두 브랜치를 합쳐서(merge) 이 문제를 해결해 볼까요?",
               "",
-              "`bugFix` 브랜치를 `main` 브랜치에 합쳐(merge) 보겠습니다."
+              "`bugFix` 브랜치를 `master` 브랜치에 합쳐(merge) 보겠습니다."
             ],
             "afterMarkdowns": [
-              "보셨어요? 우선, `main`가 두 부모가 있는 커밋을 가리키고 있습니다. ",
+              "보셨어요? 우선, `master`가 두 부모가 있는 커밋을 가리키고 있습니다. ",
               "",
               "또, 커밋들의 색이 바뀐 것을 눈치 채셨나요? 이해를 돕기위해 색상으로 구분해 표현했습니다. 각 브랜치는 그 브랜치만의 색상으로 그렸습니다. 브랜치가 합쳐지는 커밋의 경우에는, 그 브랜치들의 색을 조합한 색상으로 표시 했습니다.",
               "",
-              "그런식으로 여기에 `bugFix`브랜치 쪽을 제외한 나머지 커밋만 `main` 브랜치의 색으로 칠해져 있습니다. 이걸 고쳐보죠..."
+              "그런식으로 여기에 `bugFix`브랜치 쪽을 제외한 나머지 커밋만 `master` 브랜치의 색으로 칠해져 있습니다. 이걸 고쳐보죠..."
             ],
             "command": "git merge bugFix",
-            "beforeCommand": "git checkout -b bugFix; git commit; git checkout main; git commit"
+            "beforeCommand": "git checkout -b bugFix; git commit; git checkout master; git commit"
           }
         },
         {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "이제 `main` 브랜치에 `bugFix`를 합쳐(merge) 봅시다:"
+              "이제 `master` 브랜치에 `bugFix`를 합쳐(merge) 봅시다:"
             ],
             "afterMarkdowns": [
-              "`bugFix`가 `main`의 부모쪽에 있었기 때문에, git이 별다른 일을 할 필요가 없었습니다; 간단히 `bugFix`를 `main`가 붙어 있는 커밋으로 이동시켰을 뿐입니다.",
+              "`bugFix`가 `master`의 부모쪽에 있었기 때문에, git이 별다른 일을 할 필요가 없었습니다; 간단히 `bugFix`를 `master`가 붙어 있는 커밋으로 이동시켰을 뿐입니다.",
               "",
               "짜잔! 이제 모든 커밋의 색이 같아졌고, 이는 두 브랜치가 모두 저장소의 모든 작업 내역을 포함하고 있다는 뜻입니다."
             ],
-            "command": "git checkout bugFix; git merge main",
-            "beforeCommand": "git checkout -b bugFix; git commit; git checkout main; git commit; git merge bugFix"
+            "command": "git checkout bugFix; git merge master",
+            "beforeCommand": "git checkout -b bugFix; git commit; git checkout master; git commit; git merge bugFix"
           }
         },
         {
@@ -861,9 +861,9 @@ exports.level = {
               "* `bugFix`라는 새 브랜치를 만듭니다",
               "* `git checkout bugFix`를 입력해 `bugFix` 브랜치로 이동(checkout)합니다.",
               "* 커밋 한 번 하세요",
-              "* `git checkout` 명령어를 이용해 `main`브랜치로 돌아갑니다",
+              "* `git checkout` 명령어를 이용해 `master`브랜치로 돌아갑니다",
               "* 커밋 또 하세요",
-              "* `git merge` 명령어로 `bugFix`브랜치를 `main`에 합쳐 넣습니다.",
+              "* `git merge` 명령어로 `bugFix`브랜치를 `master`에 합쳐 넣습니다.",
               "",
               "*아 그리고, \"objective\" 명령어로 이 안내창을 다시 볼 수 있다는 것을 기억해 두세요!*"
             ]

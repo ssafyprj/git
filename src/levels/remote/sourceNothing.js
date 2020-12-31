@@ -599,7 +599,7 @@ exports.level = {
               "됬습니다, 원격 저장소의 `foo`브랜치를 성공적으로 삭제했습니다. \"없음\"을 push한다는것이 이것을 이뤘습니다. 흠 말이 되는것 같네요 null을 push했어요..."
             ],
             "command": "git push origin :foo",
-            "beforeCommand": "git clone; git push origin main:foo"
+            "beforeCommand": "git clone; git push origin master:foo"
           }
         },
         {

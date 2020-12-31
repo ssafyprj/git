@@ -1107,15 +1107,15 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "여기 병합된 커밋이 있습니다. 우리가 `main`를 수식없이 체크아웃한다면 병합된 커밋의 첫 부모를 따라 올라갈 것입니다. ",
+              "여기 병합된 커밋이 있습니다. 우리가 `master`를 수식없이 체크아웃한다면 병합된 커밋의 첫 부모를 따라 올라갈 것입니다. ",
               "",
               "(*화면에서는 첫 부모는 병합된 커밋 바로 위에 위치해 있습니다.*)"
             ],
             "afterMarkdowns": [
               "간단하죠 -- 우리한테 익숙한 모습입니다."
             ],
-            "command": "git checkout main^",
-            "beforeCommand": "git checkout HEAD^; git commit; git checkout main; git merge C2"
+            "command": "git checkout master^",
+            "beforeCommand": "git checkout HEAD^; git commit; git checkout master; git merge C2"
           }
         },
         {
@@ -1127,8 +1127,8 @@ exports.level = {
             "afterMarkdowns": [
               "보이나요? 다른 부모를 선택해 올라갔습니다."
             ],
-            "command": "git checkout main^2",
-            "beforeCommand": "git checkout HEAD^; git commit; git checkout main; git merge C2"
+            "command": "git checkout master^2",
+            "beforeCommand": "git checkout HEAD^; git commit; git checkout master; git merge C2"
           }
         },
         {
@@ -1141,7 +1141,7 @@ exports.level = {
               "빛처럼 빠르게 말이죠!"
             ],
             "command": "git checkout HEAD~; git checkout HEAD^2; git checkout HEAD~2",
-            "beforeCommand": "git commit; git checkout C0; git commit; git commit; git commit; git checkout main; git merge C5; git commit"
+            "beforeCommand": "git commit; git checkout C0; git commit; git commit; git commit; git checkout master; git merge C5; git commit"
           }
         },
         {
@@ -1154,7 +1154,7 @@ exports.level = {
               "앞과 같은 움직임이지만 하나의 명령으로 표현되었습니다."
             ],
             "command": "git checkout HEAD~^2~2",
-            "beforeCommand": "git commit; git checkout C0; git commit; git commit; git commit; git checkout main; git merge C5; git commit"
+            "beforeCommand": "git commit; git checkout C0; git commit; git commit; git commit; git checkout master; git merge C5; git commit"
           }
         },
         {

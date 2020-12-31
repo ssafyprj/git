@@ -820,9 +820,9 @@ exports.level = {
               "",
               "제가 상대 참조를 사용하는 가장 일반적인 방법은 브랜치를 옮길 때 입니다. `-f` 옵션을 이용해서 브랜치를 특정 커밋에 직접적으로 재지정 할 수 있습니다. 이런 식으로 말이죠:",
               "",
-              "`git branch -f main HEAD~3`",
+              "`git branch -f master HEAD~3`",
               "",
-              "(강제로) main 브랜치를 HEAD에서 세번 뒤로 옮겼습니다. (three parents behind HEAD)."
+              "(강제로) master 브랜치를 HEAD에서 세번 뒤로 옮겼습니다. (three parents behind HEAD)."
             ]
           }
         },
@@ -834,7 +834,7 @@ exports.level = {
             ],
             "afterMarkdowns": [
               "됬네요! 우리는 상대 참조를 통해 `C1`을 간결한 방법으로 참조할 수 있었고 브랜치 강제(`-f`)를 통해 브랜치를 저 위치로 빠르게 옮길 수 있었습니다."            ],
-            "command": "git branch -f main HEAD~3",
+            "command": "git branch -f master HEAD~3",
             "beforeCommand": "git commit; git commit; git commit; git checkout -b bugFix"
           }
         },
@@ -844,7 +844,7 @@ exports.level = {
             "markdowns": [
               "자 이제 상대 참조와 브랜치 강제의 조합을 봤으니 다음 레벨을 해결해 봅시다.",
               "",
-              "이 레벨을 통과하기 위해서, `HEAD`와 `main`와 `bugFix`를 제시되는 골지점으로 옮겨 주십시오."
+              "이 레벨을 통과하기 위해서, `HEAD`와 `master`와 `bugFix`를 제시되는 골지점으로 옮겨 주십시오."
             ]
           }
         }

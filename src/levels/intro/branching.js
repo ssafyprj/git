@@ -959,7 +959,7 @@ exports.level = {
               "이 새로운 브랜치에 약간의 작업을 더해봅시다. 아래 버튼을 눌러주세요"
             ],
             "afterMarkdowns": [
-              "앗! `main` 브랜치가 움직이고, `newImage` 브랜치는 이동하지 않았네요! 그건 우리가 새 브랜치 위에 있지 않았었기 때문입니다. 별표(*)가 `main`에 있었던 것이죠."
+              "앗! `master` 브랜치가 움직이고, `newImage` 브랜치는 이동하지 않았네요! 그건 우리가 새 브랜치 위에 있지 않았었기 때문입니다. 별표(*)가 `master`에 있었던 것이죠."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
