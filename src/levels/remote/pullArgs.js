@@ -822,9 +822,9 @@ exports.level = {
               "place를 지정하면, 이전에 fecth를 하던때와 완전히 똑같이 진행되고 fetch한것을 병합합니다."
             ],
             "afterMarkdowns": [
-              "보이죠! `main`를 지정해서 우리는 `o/main`에 평소처럼 커밋들을 내려받았습니다. 그다음 우리가 있는 곳으로 `o/main`를 병합했습니다 현재 체크아웃된 브랜치와 *상관없이* 말이죠"
+              "보이죠! `master`를 지정해서 우리는 `o/master`에 평소처럼 커밋들을 내려받았습니다. 그다음 우리가 있는 곳으로 `o/master`를 병합했습니다 현재 체크아웃된 브랜치와 *상관없이* 말이죠"
             ],
-            "command": "git pull origin main",
+            "command": "git pull origin master",
             "beforeCommand": "git clone; go -b bar; git commit; git fakeTeamwork"
           }
         },
@@ -837,7 +837,7 @@ exports.level = {
             "afterMarkdowns": [
               "이야, 명령어 하나에 많은게 일어나고있습니다. 로컬에 이름이 `foo`인 새 브랜치를 만들고, 원격 저장소의 master에서 이 브랜치 `foo`에 커밋들을 내려받습니다, 그후 그 브랜치를 우리가 현재 체크아웃한 브랜치 `bar`로 병합했습니다. 오오오!!!"
             ],
-            "command": "git pull origin main:foo",
+            "command": "git pull origin master:foo",
             "beforeCommand": "git clone; git fakeTeamwork; go -b bar; git commit"
           }
         },

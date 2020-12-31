@@ -358,7 +358,7 @@ var VisBranch = VisBase.extend({
       name = '.';
     }
     if (name.match(/\bmaster\b/)) {
-      name = name.replace(/\bmaster\b/, 'main');
+      //name = name.replace(/\bmaster\b/, 'main');
     }
 
     var after = (selected && !this.getIsInOrigin() && !isRemote) ? '*' : '';

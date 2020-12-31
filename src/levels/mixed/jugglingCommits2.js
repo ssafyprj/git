@@ -505,7 +505,7 @@ exports.level = {
               "좋아요! 계속할게요"
             ],
             "command": "git cherry-pick C2",
-            "beforeCommand": "git checkout -b bugFix; git commit; git checkout main; git commit"
+            "beforeCommand": "git checkout -b bugFix; git commit; git checkout master; git commit"
           }
         },
         {

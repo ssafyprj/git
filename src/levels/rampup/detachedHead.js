@@ -933,9 +933,9 @@ exports.level = {
               "직접 확인해 봅시다. 여기서 우리는 보이지 않던 HEAD를 커밋전, 후에 드러낼 것입니다."
             ],
             "afterMarkdowns": [
-              "보세요! HEAD가 `main`브랜치 아래에 숨어 있던 거군요."
+              "보세요! HEAD가 `master`브랜치 아래에 숨어 있던 거군요."
             ],
-            "command": "git checkout C1; git checkout main; git commit; git checkout C2",
+            "command": "git checkout C1; git checkout master; git commit; git checkout C2",
             "beforeCommand": ""
           }
         },
@@ -947,7 +947,7 @@ exports.level = {
               "",
               "HEAD를 분리한다는 것은 HEAD를 브랜치 대신 커밋에 붙이는 것을 의미합니다. 명령을 사용하기 전의 모습은 다음과 같습니다:",
               "",
-              "HEAD -> main -> C1",
+              "HEAD -> master -> C1",
               ""
             ],
             "afterMarkdowns": [
@@ -963,7 +963,7 @@ exports.level = {
           "type": "ModalAlert",
           "options": {
             "markdowns": [
-              "다음 레벨로 넘어가기 위해서는, HEAD를 `bugfix`에서 분리하고 그 커밋에 붙이세요.",
+              "다음 레벨로 넘어가기 위해서는, HEAD를 `bugFix`에서 분리하고 그 커밋에 붙이세요.",
               "",
               "각 커밋은 그것의 해시값으로 특정지을수 있습니다. 각 커밋의 해시값은 각 커밋을 나타내는 원안에 나타나있습니다."
             ]

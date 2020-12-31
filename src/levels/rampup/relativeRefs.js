@@ -901,16 +901,16 @@ exports.level = {
             "beforeMarkdowns": [
               "먼저 캐럿 (^) 연산자 부터 알아보겠습니다. 참조 이름에 하나씩 추가할 때마다, 명시한 커밋의 부모를 찾게 됩니다.",
               "",
-              "`main^`는 \"`main`의 부모\"와 같은 의미 입니다.",
+              "`master^`는 \"`master`의 부모\"와 같은 의미 입니다.",
               "",
-              "`main^^` 는 \"`main`의 조부모(부모의 부모)\"를 의미합니다",
+              "`master^^` 는 \"`master`의 조부모(부모의 부모)\"를 의미합니다",
               "",
-              "main 위에 있는 부모를 체크아웃 해 봅시다."
+              "master 위에 있는 부모를 체크아웃 해 봅시다."
             ],
             "afterMarkdowns": [
               "Boom! 됬습니다. 커밋의 해시를 입력하는 것보다 훨씬 쉬운 방법입니다."
             ],
-            "command": "git checkout main^",
+            "command": "git checkout master^",
             "beforeCommand": "git commit"
           }
         },

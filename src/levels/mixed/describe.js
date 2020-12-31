@@ -773,7 +773,7 @@ exports.level = {
               "간단한 예제를 확인해 봅시다. 아래의 트리에서:"
             ],
             "afterMarkdowns": [
-              "`git describe main` 명령은 다음을 출력합니다:",
+              "`git describe master` 명령은 다음을 출력합니다:",
               "",
               "`v1_2_gC2`",
               "",

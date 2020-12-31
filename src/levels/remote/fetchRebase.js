@@ -1813,7 +1813,7 @@ exports.level = {
             "afterMarkdowns": [
               "Boom! `git fetch`로 원격 저장소의 변경정보를 가져오고, 새 변경들로 우리 작업을 리베이스 했습니다, 이제 `git push`하면 끝!"
             ],
-            "command": "git fetch; git rebase o/main; git push",
+            "command": "git fetch; git rebase o/master; git push",
             "beforeCommand": "git clone; git fakeTeamwork; git commit"
           }
         },
@@ -1838,7 +1838,7 @@ exports.level = {
             "afterMarkdowns": [
               "Boom! `git fetch`로 원격 저장소의 변경정보를 가져오고, 새 작업을 우리 작업으로 *병합*했습니다 (원격 저장소의 변경을 반영하기 위해서죠), 이제 `git push`하면 끝!"
             ],
-            "command": "git fetch; git merge o/main; git push",
+            "command": "git fetch; git merge o/master; git push",
             "beforeCommand": "git clone; git fakeTeamwork; git commit"
           }
         },
